@@ -1,2 +1,2 @@
-# OSCP-Binaries
-Just some binaries that might be useful during OSCP exam ( ≖‿  ≖ )
+# OSCP-Tools
+Just some tools and binaries that might be useful during OSCP exam ( ≖‿  ≖ )
